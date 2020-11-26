@@ -1,0 +1,226 @@
+#resume {
+  margin-left: 150px;
+}
+
+.heading {
+  text-align: center;
+  font-weight: 700;
+  width: 50%;
+  margin: 150px auto 50px auto;
+  padding-bottom: 10px;
+  border-bottom: 1px solid black;
+}
+
+#work-experience-section {}
+
+.work-experience-block {
+  width: 600px;
+  margin: 100px auto 25px auto; 
+  padding-left: 10px;
+  border-left: 1px solid black;
+}
+
+.job-title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 3px;
+}
+
+.employer-details {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 3px;
+}
+
+.company-name {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.company-location {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.employment-dates {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.job-overview {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.job-highlight-list {
+  padding: 10px;
+}
+
+.job-highlight {
+  font-size: 1.2rem;
+  list-style: '- ';
+  margin-bottom: 5px;
+}
+
+#certification-section {
+  width: 600px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.certification-block {
+  width: 289px;
+  height: 100px;
+  margin: 50px auto 10px auto; 
+  padding-left: 10px;
+  border-left: 1px solid black;
+}
+
+.certification-name {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.certification-issuer {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-bottom: 3px;
+}
+
+.certification-year {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+
+.job-title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.employer-details {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+#education-section {
+  width: 800px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: auto;
+  margin-bottom: 100px;
+}
+
+.education-block {
+  width: 389px;
+  height: 100px;
+  margin: 50px auto 10px auto; 
+  padding-left: 10px;
+  border-left: 1px solid black;
+}
+
+.education-major {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.school-name {
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+
+.school-location {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+
+.graduation-year {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+
+@media screen and (max-width: 1000px) {
+  #education-section {
+    width: 100%;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #resume {
+    margin: 160px 50px 0 50px;
+  }
+  
+  .heading {
+    width: 80%;
+  }
+
+  .work-experience-block {
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  #certification-section {
+    width: 100%;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .heading {
+    width: 100%;
+  }
+
+  .work-experience-block {
+    width: 250px;
+    height: auto;
+  }
+  
+  .certification-block {
+    width: 250px;  
+    height: auto; 
+  }
+  
+  .education-block {
+    width: 250px;   
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #resume {
+    margin: 160px 25px 0 25px;
+  }
+
+  .heading {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  #resume {
+    margin: 160px 10px 0 10px;
+  }
+
+  .heading {
+    width: 100%;
+  }
+}
