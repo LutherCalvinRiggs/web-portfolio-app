@@ -3,11 +3,13 @@ import '../css/Nav.css';
 
   const LogoImage = () => {
     return (
-      <img 
-        className="logo-image"
-        src="./images/logo-black-text.png"
-        alt="Logo">
-      </img>
+      <a href="/index">
+        <img 
+          className="logo-image"
+          src="./images/logo-black-text.png"
+          alt="Luther Calvin Riggs logo">
+        </img>
+      </a>
     )
   }
 

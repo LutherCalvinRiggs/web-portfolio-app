@@ -15,26 +15,38 @@ class Footer extends Component {
         <ul id="footer-link-list">
           <li className="footer-link-li">
             <a className="footer-link" 
+            href="https://www.linkedin.com/in/lcriggs"
+            target="_blank"
+            rel="noreferrer"
+            >
+              LinkedIn
+            </a>
+          </li>
+          <li className="footer-link-li">
+            <a className="footer-link" 
             href="https://github.com/LutherCalvinRiggs"
             target="_blank"
-          >
-            Github
+            rel="noreferrer"
+            >
+              Github
             </a>
           </li>
           <li className="footer-link-li">
-          <a className="footer-link" 
-            href="https://twitter.com/LutherCalRiggs"
-            target="_blank"
-          >
-            Twitter
+            <a className="footer-link" 
+              href="https://twitter.com/LutherCalRiggs"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Twitter
             </a>
           </li>
           <li className="footer-link-li">
-          <a className="footer-link" 
+            <a className="footer-link" 
             href="https://www.instagram.com/luthercalvinriggs/"
             target="_blank"
-          >
-            Instagram
+            rel="noreferrer"
+            >
+             Instagram
             </a>
           </li>
         </ul>
