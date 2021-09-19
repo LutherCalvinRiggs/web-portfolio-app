@@ -15,6 +15,7 @@ const Portfolio = () => {
           <Image 
             imgSrc={project.imgSrc}
             imgAltText={project.name}
+            link={project.htmlLink}
           />
           <ProjectInfo 
             title={project.name}
@@ -32,11 +33,13 @@ const Portfolio = () => {
   const Image = (props) => {
     return (
       <div className="project-image-block">
-        <img 
-          className="project-preview-image"
-          src={props.imgSrc}
-          alt={props.imgAltText}>
-        </img>
+        <a href={props.link} target="_blank" rel="noreferrer">
+          <img 
+            className="project-preview-image"
+            src={props.imgSrc}
+            alt={props.imgAltText}>
+          </img>
+        </a>
       </div>
     )
   }
@@ -92,6 +95,7 @@ const Portfolio = () => {
           className="project-link" 
           href={props.link}
           target="_blank"
+          rel="noreferrer"
         >
           View Project
         </a>
