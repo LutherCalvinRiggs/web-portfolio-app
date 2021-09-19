@@ -1,5 +1,13 @@
 export const portfolioProjectArray = [
 	{
+		id: "5",
+		name: "Pharmaceutical Website",
+		imgSrc: "./images/monjuvihcp.jpg",
+		description: "OPDP approved, healthcare provider website for diffuse large B-cell lymphoma; featuring videos, interactive treatment calender funtionality, CSS animation and downloadable PDFs. ",
+		techStack: "PHP, HTML5, SASS, JavaScript, Gulp, and Azure. ",
+		htmlLink: "http://www.monjuvihcp.com"
+	},
+	{
 		id: "4",
 		name: "Musical Artist Website",
 		imgSrc: "./images/site-preview-luthercalvinriggs.jpg",
