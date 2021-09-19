@@ -216,7 +216,7 @@ const Resume = () => {
 		const WorkDates = (props) => {
 			return (
 				<p className="employment-dates">
-					<span className="start-date">{props.startDate}</span> - 
+					<span className="start-date">{props.startDate}</span>&nbsp;-&nbsp; 
 					<span className="end-date">{props.endDate}</span>
 				</p>
 			)
