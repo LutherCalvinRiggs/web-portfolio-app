@@ -13,6 +13,11 @@ h1 {
   color: black;
 }
 
+.jumbotron a {
+	text-decoration: none;
+	color: #000;
+}
+
 #name-block {
 	width: 350px;
 	font-family: 'Oswald', sans-serif;
@@ -47,7 +52,7 @@ h1 {
 	border-radius: 15px;
 	padding: 10px;
 	border: 1px solid grey;
-	box-shadow: 2px 2px 1px black;
+	box-shadow: 8px 7px 12px #808080;
 	transform: rotate(-15deg);
 }
 
