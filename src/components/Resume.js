@@ -8,6 +8,7 @@ import Footer from './Footer.js';
 
 const Resume = () => {
 	return (
+		// Need to update your resume
 		<>
 			<main id="resume">
 				<WorkExperience />
@@ -21,6 +22,7 @@ const Resume = () => {
 
 	const Education = (props) => {
 		return (
+			// Need to make this the <section> then style the elements within the section
 			<>
 				<h1 
 					id="education-heading" 

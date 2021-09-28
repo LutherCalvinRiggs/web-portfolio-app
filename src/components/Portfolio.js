@@ -100,6 +100,7 @@ const Portfolio = () => {
           rel="noreferrer"
         >
           View Project
+          {/* Need to add font-awesome icon of arrow pointing out of a box */}
         </a>
       )
     }

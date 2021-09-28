@@ -17,6 +17,7 @@ import SkipToMainContent from './ADA/SkipToMainContent.js';
 
   const NavLink = (props) => {
     return (
+      // These need to be clickable to keyboard users
       <p
         id={props.buttonName}
         className="nav-button"
@@ -25,6 +26,7 @@ import SkipToMainContent from './ADA/SkipToMainContent.js';
         tabIndex="0"
       >{props.buttonText}
       </p>
+      // Need to add jump links to projects and resume categories
     )
   }
 
