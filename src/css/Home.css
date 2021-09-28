@@ -1,10 +1,11 @@
 #landing-page {
 	margin-left: 150px;
-	width: auto;
-	height: calc(100vh - 125px);
+	/* width: auto; */
+	/* height: calc(100% - 125px); */
+	min-height: 98%;
 	display: flex;
 	flex-direction: row;
-	justify-content: space-evenly;
+	justify-content: center;
 	align-items: center;
 }
 

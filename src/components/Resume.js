@@ -2,16 +2,20 @@ import React from 'react';
 import { educationArray } from './educationArray.js'
 import { certificationArray } from './certificationArray.js'
 import { resumeExperienceArray } from './resumeExperienceArray.js'
-import '../css/Resume.css'
+import Footer from './Footer.js';
+// import '../css/Resume.css'
 
 
 const Resume = () => {
 	return (
-		<div id="resume">
-			<WorkExperience />
-			<Certifications />
-			<Education />
-		</div>
+		<>
+			<main id="resume">
+				<WorkExperience />
+				<Certifications />
+				<Education />
+			</main>
+			<Footer />
+		</>
 	)
 }
 

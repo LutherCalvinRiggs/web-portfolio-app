@@ -1,9 +1,11 @@
 import React from 'react';
-import '../css/Nav.css';
+// import '../css/Header.css';
+// import '../css/ADA.css';
+import SkipToMainContent from './ADA/SkipToMainContent.js';
 
   const LogoImage = () => {
     return (
-      <a href="/index">
+      <a href="/index.html" className="logo-image-link" aria-label="Return to Home Page">
         <img 
           className="logo-image"
           src="./images/logo-black-text.png"
@@ -13,32 +15,36 @@ import '../css/Nav.css';
     )
   }
 
-  const ContentButton = (props) => {
+  const NavLink = (props) => {
     return (
       <p
         id={props.buttonName}
         className="nav-button"
         onClick={(e) => props.clickAction(e)}
+        aria-label={props.ariaLabel}
+        tabIndex="0"
       >{props.buttonText}
       </p>
     )
   }
 
-  const ButtonList = (props) => {
+  const NavLinkList = (props) => {
     return (
       <div id="nav-button-list">
-        <ContentButton 
+        <NavLink 
           buttonName="portfolio-button"
           buttonText="Portfolio"
+          ariaLabel="View Luther's portfolio"
           clickAction={(e) => {
             props.updateContent("portfolio")
             props.clearActiveTab()
             props.activateTab(e)
           }}
         />
-        <ContentButton 
+        <NavLink 
           buttonName="resume-button"
           buttonText="Resume"
+          ariaLabel="View Luther's resume"
           clickAction={(e) => {
             props.updateContent("resume")
             props.clearActiveTab()
@@ -49,16 +55,18 @@ import '../css/Nav.css';
     )
   }
 
-const Nav = (props) => {
+const Header = (props) => {
   return (
-    <nav>
-      <LogoImage />
-      <ButtonList 
-        updateContent={props.updateContent}
-        clearActiveTab={clearActiveTab}
-        activateTab={activateTab}
-      />
-    </nav>
+    <header>
+      <nav>
+        <LogoImage />
+        <NavLinkList 
+          updateContent={props.updateContent}
+          clearActiveTab={clearActiveTab}
+          activateTab={activateTab}
+        />
+      </nav>
+    </header>
   )
 }
 
@@ -74,4 +82,4 @@ const Nav = (props) => {
     clickedTab.classList.add('active')
   }
 
-export default Nav
+export default Header

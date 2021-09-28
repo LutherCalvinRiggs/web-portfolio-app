@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import '../css/App.css';
-import Footer from './Footer.js'
-import Nav from './Nav.js'
+// import '../css/App.css';
+// import Footer from './Footer.js'
+import Header from './Header.js'
 import Home from './Home.js'
 import Portfolio from './Portfolio.js'
 import Resume from './Resume.js'
@@ -21,11 +21,11 @@ class App extends Component {
   }
 
   content = (props) => {
-    if (props === "home") {
+    if (this.state.showContent === "home") {
       return <Home />
-    } else if (props === "portfolio") {
+    } else if (this.state.showContent === "portfolio") {
       return  <Portfolio />
-    } else if (props === "resume") {
+    } else if (this.state.showContent === "resume") {
       return  <Resume />
     }
   }
@@ -33,11 +33,11 @@ class App extends Component {
   render() {
     return (
         <div id="app-container">
-          <Nav 
+          <Header 
             updateContent={this.updateState}
           />
           {this.content(this.state.showContent)}
-          <Footer />
+          {/* <Footer /> */}
         </div>
     );
   }

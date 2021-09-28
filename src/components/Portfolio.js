@@ -1,14 +1,15 @@
 import React from 'react';
-import { portfolioProjectArray } from './portfolioProjectArray.js'
-import '../css/Portfolio.css';
+import { portfolioProjectArray } from './portfolioProjectArray.js';
+import Footer from './Footer.js';
+// import '../css/Portfolio.css';
  
 
 const Portfolio = () => {
   return (
-    <div id="project-portfolio">
+    <main id="project-portfolio">
 
       {portfolioProjectArray.map(project => (
-        <div 
+        <article 
           key={project.id} 
           className="project-block"
         >
@@ -23,10 +24,11 @@ const Portfolio = () => {
             techStack={project.techStack}
             link={project.htmlLink}
           />
-        </div>
+        </article>
       ))}
+      <Footer />
 
-    </div>
+    </main>
   )
 }
 
@@ -46,7 +48,7 @@ const Portfolio = () => {
 
   const ProjectInfo = (props) => {
     return (
-      <div className="project-info-block">
+      <section className="project-info-block">
         <ProjectTitle 
           title={props.title}
         />
@@ -59,7 +61,7 @@ const Portfolio = () => {
         <ProjectLink 
           link={props.link}
         />
-      </div>
+      </section>
     )
   }
 

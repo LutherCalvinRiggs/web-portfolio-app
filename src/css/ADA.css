@@ -1,0 +1,21 @@
+.skip-to-main-content {
+  color: black;
+  font-family: "Oswald", sans-serif;
+  font-weight: bold;
+  padding: 8px;
+  border: 1px solid #333;
+  border-radius: 3px;
+  position: absolute;
+  top: 13px;
+  left: 230px;
+  transform: translateX(-50%);
+  z-index: 10;
+  /* Postion off screen */
+  /* transform: translateY(-100%); */
+  /* Animate on to screen */
+  /* transition: transform 0.5s; */
+}
+
+.skip-to-content:focus {
+  transform: translateY(0%);
+}

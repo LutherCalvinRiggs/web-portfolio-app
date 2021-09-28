@@ -1,19 +1,22 @@
 import React from 'react';
-import '../css/Home.css';
-
+// import '../css/Home.css';
+import Footer from './Footer.js';
 
 const Home = () => {
   return (
-    <div id="landing-page">
-      <NameBlock />
-      <HeadShot />
-    </div>
+    <>
+      <main id="landing-page">
+        <NameBlock />
+        <HeadShot />
+      </main>
+      <Footer />
+    </>
   )
 }
 
   const NameBlock = () => {
     return (
-      <main className="jumbotron">
+      <section className="jumbotron">
         <a href="https://www.linkedin.com/in/lcriggs" target="_blank" rel="noreferrer">
           <div id="name-block">
             <h1 id="first-name">LUTHER</h1>
@@ -22,7 +25,7 @@ const Home = () => {
             <h2 id="job-title">Frontend Web Developer</h2>
           </div>
         </a>
-      </main>
+      </section>
     )
   }
 
